@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 60px auto;
+}
+
+h1 {
+  font-size: 96px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0;
+  text-align: left;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link,
+.about-link {
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.description-pharaghrap {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.email-address {
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.email-address:hover {
+  text-decoration: underline;
+  color: #135eca;
+}
+
+.app-link {
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  padding: 20px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h2,
+  p {
+    text-align: center;
+  }
+  .app-link {
+    display: block;
+    margin: auto;
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  .app-image {
+    margin-bottom: 25px;
+  }
+}
